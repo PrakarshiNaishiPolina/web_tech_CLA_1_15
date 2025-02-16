@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+         }
+        td {
+            padding: 10px;
+        }
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+     
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="firstname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Upload Photo:</td>
+                    <td><input type="file" name="photo"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <select name="country">
+                            <option>Select</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>India</option>
+                            <option>Australia</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Preferences</legend>
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" name="confirm_password"></td>
+                </tr>
+                <tr>
+                    <td>Subscription Preferences:</td>
+                    <td>
+                        <input type="checkbox" name="newsletter"> Subscribe to Newsletter<br>
+                        <input type="checkbox" name="offers"> Receive Offers
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+       
+        <fieldset>
+            <legend>Other Information</legend>
+            <table>
+                <tr>
+                    <td>Favorite Color:</td>
+                    <td><input type="color" name="color"></td>
+                </tr>
+                <tr>
+                    <td>Personal Website:</td>
+                    <td><input type="url" name="website"></td>
+                </tr>
+                <tr>
+                    <td>Rate Us:</td>
+                    <td><input type="range" name="rating" min="1" max="5"></td>
+                </tr>
+                <tr>
+                    <td>Preferred Contact Time:</td>
+                    <td><input type="time" name="contact_time"></td>
+                </tr> 
+            </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Submit</legend>
+            <div>
+              <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html> 
